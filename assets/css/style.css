@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --cor-primaria: #FBF8F1;
+    --cor-secundaria: #F7ECDE;
+    --cor-tercearia: #E9DAC1;
+    --cor-quartenaria: #54BAB9;
+    --cor-texto: #302c24;
+
+    --font-titulo: font-family: "Playfair Display", serif;
+    --font-texto: font-family: "Lato", sans-serif;
+}
+
+body {
+    font-family: var(--font-texto);
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    font-size: 1rem;
+}
+
+.cabecalho {
+    padding: 3rem;
+    padding-bottom: 0;
+}
+
+.cabecalho__nav {
+    display: flex;
+    gap: 2rem;
+    position: fixed;
+    width: 100%;
+    top: 20px;
+}
+
+.cabecalho__nav__link {
+    color: var(--cor-texto);
+    border-bottom: 1px solid var(--cor-texto);
+    padding: 0.2rem;
+    border-radius: 3px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem;
+}
+
+.conteudo__apresentacao {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.conteudo__apresentacao__titulo {
+    font-family: var(--font-titulo);
+}
+
+.conteudo__apresentacao__paragrafo {
+    padding-bottom: 0.5rem;
+}
+
+.conteudo__apresentacao__link {
+    width: 40%;
+    border: 1px solid var(--cor-texto);
+    padding: 0.2rem;
+    border-radius: 3px;
+    text-align: center;
+    color: var(--cor-texto);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.imagem_perfil {
+    width: 50%;
+    padding: 2rem;
+    box-shadow: 1px 1px 10px black
+}
+
+.rodape {
+    background-color: var(--cor-tercearia);
+    padding: 1%;
+    text-align: center;
+}
